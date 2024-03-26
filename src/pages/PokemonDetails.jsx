@@ -88,7 +88,7 @@ const PokemonDetails = () => {
                     ))}
                 </List>
             </Section>
-                <Link to='/'>
+                <Link to='/teste-teste'>
                     <CustomButton>Voltar para home</CustomButton>
                 </Link>
         </Container>
