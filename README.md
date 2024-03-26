@@ -1,4 +1,5 @@
-# Pokedex App
+<h1 align="center"> Pokedex App </h1>
+<img src="./src/images/presentation.jpg" alt="Demonstração do projeto" width="100%"  />
 
 Este é um aplicativo simples de Pokedex construído com React.js e Styled Components.
 
@@ -12,7 +13,7 @@ Este é um aplicativo simples de Pokedex construído com React.js e Styled Compo
 
 1. Clone o repositório:
 
-git clone https://github.com/filipevolz/pokemon-API.git
+git clone https://github.com/filipevolz/pokedex-API.git
 
 2. Navegue até o diretório do projeto:
 
