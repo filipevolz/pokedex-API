@@ -88,7 +88,7 @@ const PokemonDetails = () => {
                     ))}
                 </List>
             </Section>
-                <Link to='/teste-teste'>
+                <Link to='/pokedex-API'>
                     <CustomButton>Voltar para home</CustomButton>
                 </Link>
         </Container>
