@@ -105,7 +105,7 @@ color: ${e=>e.theme.colors.text};
   align-items: center; 
   flex-wrap: wrap;
   margin-bottom: 10px;
-`,fg=()=>I.jsx("div",{children:I.jsx(sg,{})}),dg=()=>{const{name:e}=Tv(),[t,n]=_.useState(null);_.useEffect(()=>{(async()=>{try{const s=await(await fetch(`https://pokeapi.co/api/v2/pokemon/${e}`)).json();n(s)}catch(u){console.error("Error fetching Pokemon details:",u)}})()},[e]);const r=async l=>{try{return await(await fetch(l)).json()}catch(u){return console.error("Error fetching ability details:",u),null}},[o,i]=_.useState([]);return _.useEffect(()=>{t&&(async()=>{const u=await Promise.all(t.abilities.map(async s=>await r(s.ability.url)));i(u)})()},[t]),t?I.jsxs(pg,{children:[I.jsx(hg,{children:t.name}),I.jsx(mg,{src:t.sprites.front_default,alt:t.name}),I.jsxs(xl,{children:[I.jsx(El,{children:"Moves:"}),I.jsx(Cl,{children:t.moves.map((l,u)=>I.jsx(_l,{children:l.move.name},u))})]}),I.jsxs(xl,{children:[I.jsx(El,{children:"Abilities:"}),I.jsx(Cl,{children:o.map((l,u)=>I.jsx(_l,{children:l?I.jsxs(I.Fragment,{children:[I.jsxs("strong",{style:{fontSize:20},children:[l.name,":"]})," ",l.effect_entries[0].short_effect]}):"Loading..."},u))})]}),I.jsxs(xl,{children:[I.jsx(El,{children:"Type:"}),I.jsx(Cl,{children:t.types.map((l,u)=>I.jsx(_l,{children:l.type.name},u))})]}),I.jsx(yp,{to:"/",children:I.jsx(gg,{children:"Voltar para home"})})]}):I.jsx(vg,{children:"Loading..."})},pg=ce.div`  
+`,fg=()=>I.jsx("div",{children:I.jsx(sg,{})}),dg=()=>{const{name:e}=Tv(),[t,n]=_.useState(null);_.useEffect(()=>{(async()=>{try{const s=await(await fetch(`https://pokeapi.co/api/v2/pokemon/${e}`)).json();n(s)}catch(u){console.error("Error fetching Pokemon details:",u)}})()},[e]);const r=async l=>{try{return await(await fetch(l)).json()}catch(u){return console.error("Error fetching ability details:",u),null}},[o,i]=_.useState([]);return _.useEffect(()=>{t&&(async()=>{const u=await Promise.all(t.abilities.map(async s=>await r(s.ability.url)));i(u)})()},[t]),t?I.jsxs(pg,{children:[I.jsx(hg,{children:t.name}),I.jsx(mg,{src:t.sprites.front_default,alt:t.name}),I.jsxs(xl,{children:[I.jsx(El,{children:"Moves:"}),I.jsx(Cl,{children:t.moves.map((l,u)=>I.jsx(_l,{children:l.move.name},u))})]}),I.jsxs(xl,{children:[I.jsx(El,{children:"Abilities:"}),I.jsx(Cl,{children:o.map((l,u)=>I.jsx(_l,{children:l?I.jsxs(I.Fragment,{children:[I.jsxs("strong",{style:{fontSize:20},children:[l.name,":"]})," ",l.effect_entries[0].short_effect]}):"Loading..."},u))})]}),I.jsxs(xl,{children:[I.jsx(El,{children:"Type:"}),I.jsx(Cl,{children:t.types.map((l,u)=>I.jsx(_l,{children:l.type.name},u))})]}),I.jsx(yp,{to:"/teste-teste",children:I.jsx(gg,{children:"Voltar para home"})})]}):I.jsx(vg,{children:"Loading..."})},pg=ce.div`  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -152,7 +152,7 @@ color: ${e=>e.theme.colors.text};
 &:hover {
   cursor: pointer;
   transform: scale(1.2);
-`,yg=()=>I.jsx(Jv,{children:I.jsxs(Vv,{children:[I.jsx(Ou,{exact:!0,path:"/",element:I.jsx(fg,{})}),I.jsx(Ou,{exact:!0,path:"pokemon/:name",element:I.jsx(dg,{})})]})}),wg=b0`
+`,yg=()=>I.jsx(Jv,{children:I.jsxs(Vv,{children:[I.jsx(Ou,{exact:!0,path:"/teste-teste",element:I.jsx(fg,{})}),I.jsx(Ou,{exact:!0,path:"/pokemon/:name",element:I.jsx(dg,{})})]})}),wg=b0`
     * {
         padding: 0;
         margin: 0;
